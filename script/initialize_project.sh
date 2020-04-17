@@ -43,6 +43,7 @@ function init_db {
 
 
 function finish {
+    git add .
     set +x
     echo ""
     echo "Project $name ready!"
