@@ -30,7 +30,7 @@ jobs:
       - name: "Install dependencies"
         run: poetry install -n --no-ansi
       - name: "Lint: flake8"
-        uses: tayfun/flake8-your-pr@1.0.1
+        uses: TrueBrain/actions-flake8@master
       - name: "Test: pytest"
         run: pytest
         env:
