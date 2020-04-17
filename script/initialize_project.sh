@@ -43,6 +43,7 @@ function init_db {
 
 
 function finish {
+    set +x
     echo ""
     echo "Project $name ready!"
     echo ""
