@@ -32,7 +32,7 @@ function install_deps {
 function init_db {
     echo "Creating postgres DB"
     # create pg db
-    createdb -e $name
+    createdb -e $name || return 0
 
     echo "Running migrations"
     poetry run flask db upgrade
